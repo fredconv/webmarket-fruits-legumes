@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "home": "Marché Fruits & Légumes",
+    "vendors": "Vendeurs"
+  },
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "signUp": "S'inscrire"
+  },
+  "vendors": {
+    "title": "Vendeurs",
+    "description": "Découvrez nos vendeurs de confiance de fruits et légumes",
+    "addVendor": "Ajouter un Vendeur",
+    "noVendorsFound": "Aucun vendeur trouvé",
+    "noVendorsDescription": "Soyez le premier à ajouter un vendeur à notre marché !",
+    "addFirstVendor": "Ajouter le Premier Vendeur",
+    "contactVendor": "Contacter le Vendeur",
+    "editDetails": "Modifier les Détails",
+    "memberSince": "Membre depuis",
+    "location": "Emplacement",
+    "contactEmail": "Email de Contact",
+    "backToVendors": "Retour aux Vendeurs",
+    "vendor": "Vendeur"
+  },
+  "vendorForm": {
+    "addNewVendor": "Ajouter un Nouveau Vendeur",
+    "vendorName": "Nom du Vendeur",
+    "cancel": "Annuler",
+    "adding": "Ajout en cours...",
+    "addVendor": "Ajouter un Vendeur"
+  },
+  "hero": {
+    "title": "Connectez-vous avec les vendeurs locaux de fruits et légumes de votre région",
+    "subtitle": "Marché Fruits & Légumes - Connectez-vous avec les Vendeurs Locaux"
+  },
+  "common": {
+    "nextSteps": "Prochaines étapes",
+    "poweredBy": "Propulsé par"
+  },
+  "language": {
+    "english": "Anglais",
+    "french": "Français",
+    "dutch": "Néerlandais"
+  }
+}

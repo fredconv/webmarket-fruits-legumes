@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "home": "Fruit & Groente Markt",
+    "vendors": "Verkopers"
+  },
+  "auth": {
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "signUp": "Registreren"
+  },
+  "vendors": {
+    "title": "Verkopers",
+    "description": "Ontdek onze vertrouwde fruit- en groenteverkopers",
+    "addVendor": "Verkoper Toevoegen",
+    "noVendorsFound": "Geen verkopers gevonden",
+    "noVendorsDescription": "Wees de eerste om een verkoper toe te voegen aan onze marktplaats!",
+    "addFirstVendor": "Eerste Verkoper Toevoegen",
+    "contactVendor": "Contact Verkoper",
+    "editDetails": "Details Bewerken",
+    "memberSince": "Lid sinds",
+    "location": "Locatie",
+    "contactEmail": "Contact E-mail",
+    "backToVendors": "Terug naar Verkopers",
+    "vendor": "Verkoper"
+  },
+  "vendorForm": {
+    "addNewVendor": "Nieuwe Verkoper Toevoegen",
+    "vendorName": "Naam Verkoper",
+    "cancel": "Annuleren",
+    "adding": "Toevoegen...",
+    "addVendor": "Verkoper Toevoegen"
+  },
+  "hero": {
+    "title": "Verbind met lokale fruit- en groenteverkopers in uw omgeving",
+    "subtitle": "Fruit & Groente Markt - Verbind met Lokale Verkopers"
+  },
+  "common": {
+    "nextSteps": "Volgende stappen",
+    "poweredBy": "Mogelijk gemaakt door"
+  },
+  "language": {
+    "english": "Engels",
+    "french": "Frans",
+    "dutch": "Nederlands"
+  }
+}

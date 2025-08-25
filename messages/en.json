@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "home": "Fruit & Vegetable Market",
+    "vendors": "Vendors"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "signUp": "Sign up"
+  },
+  "vendors": {
+    "title": "Vendors",
+    "description": "Discover our trusted fruit and vegetable vendors",
+    "addVendor": "Add Vendor",
+    "noVendorsFound": "No vendors found",
+    "noVendorsDescription": "Be the first to add a vendor to our marketplace!",
+    "addFirstVendor": "Add First Vendor",
+    "contactVendor": "Contact Vendor",
+    "editDetails": "Edit Details",
+    "memberSince": "Member Since",
+    "location": "Location",
+    "contactEmail": "Contact Email",
+    "backToVendors": "Back to Vendors",
+    "vendor": "Vendor"
+  },
+  "vendorForm": {
+    "addNewVendor": "Add New Vendor",
+    "vendorName": "Vendor Name",
+    "cancel": "Cancel",
+    "adding": "Adding...",
+    "addVendor": "Add Vendor"
+  },
+  "hero": {
+    "title": "Connect with local fruit & vegetable vendors in your area",
+    "subtitle": "Fruit & Vegetable Market - Connect with Local Vendors"
+  },
+  "common": {
+    "nextSteps": "Next steps",
+    "poweredBy": "Powered by"
+  },
+  "language": {
+    "english": "English",
+    "french": "French",
+    "dutch": "Dutch"
+  }
+}
