@@ -14,15 +14,43 @@ import { locales, type Locale } from '@/i18n';
 
 export function LanguageSwitcher() {
   const t = useTranslations('language');
-  const locale = useLocale();
+  const hookLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
 
+  // Extract locale from pathname as fallback
+  const getLocaleFromPathname = (path: string): Locale => {
+    const match = path.match(/^\/([a-z]{2})(?:\/|$)/);
+    if (match && locales.includes(match[1] as Locale)) {
+      return match[1] as Locale;
+    }
+    return 'en'; // default fallback
+  };
+
+  // Use pathname-derived locale if it differs from hook locale
+  const locale = getLocaleFromPathname(pathname) || hookLocale;
+
   const handleLanguageChange = (newLocale: Locale) => {
-    // Remove the current locale from the pathname
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '');
-    // Navigate to the new locale
-    router.push(`/${newLocale}${pathWithoutLocale}`);
+    // Get current pathname and remove all possible locale prefixes
+    let pathWithoutLocale = pathname;
+
+    // Remove locale prefix if it exists at the start
+    const localePattern = new RegExp(`^/(${locales.join('|')})`);
+    pathWithoutLocale = pathWithoutLocale.replace(localePattern, '');
+
+    // Ensure we have a leading slash for the path part
+    if (pathWithoutLocale && !pathWithoutLocale.startsWith('/')) {
+      pathWithoutLocale = '/' + pathWithoutLocale;
+    }
+
+    // Construct new URL
+    const newPath = `/${newLocale}${pathWithoutLocale}`;
+
+    console.log('Original pathname:', pathname);
+    console.log('Path without locale:', pathWithoutLocale);
+    console.log('New path:', newPath);
+
+    router.push(newPath);
   };
 
   const getLanguageLabel = (locale: string) => {

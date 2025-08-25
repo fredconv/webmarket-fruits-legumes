@@ -1,12 +1,43 @@
 {
   "navigation": {
-    "home": "Marché Fruits & Légumes",
-    "vendors": "Vendeurs"
+    "home": "Marché de Fruits et Légumes",
+    "vendors": "Vendeurs",
+    "members": "Membres"
   },
   "auth": {
     "login": "Connexion",
     "logout": "Déconnexion",
-    "signUp": "S'inscrire"
+    "signUp": "S'inscrire",
+    "signUpTitle": "S'inscrire",
+    "signUpDescription": "Créer un nouveau compte",
+    "loginTitle": "Connexion",
+    "loginDescription": "Connectez-vous à votre compte",
+    "forgotPasswordTitle": "Réinitialiser le mot de passe",
+    "forgotPasswordDescription": "Entrez votre email pour réinitialiser votre mot de passe",
+    "updatePasswordTitle": "Réinitialiser votre mot de passe",
+    "updatePasswordDescription": "Veuillez entrer votre nouveau mot de passe ci-dessous.",
+    "checkEmailTitle": "Vérifiez votre email",
+    "checkEmailDescription": "Instructions de réinitialisation du mot de passe envoyées",
+    "checkEmailMessage": "Si vous vous êtes inscrit avec votre email et mot de passe, vous recevrez un email de réinitialisation.",
+    "resetPasswordDescription": "Entrez votre email et nous vous enverrons un lien pour réinitialiser votre mot de passe",
+    "email": "Email",
+    "emailPlaceholder": "mon@exemple.com",
+    "password": "Mot de passe",
+    "newPassword": "Nouveau mot de passe",
+    "newPasswordPlaceholder": "Nouveau mot de passe",
+    "repeatPassword": "Répéter le mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+    "creatingAccount": "Création du compte...",
+    "loggingIn": "Connexion en cours...",
+    "sendingReset": "Envoi de l'email de réinitialisation...",
+    "sendResetEmail": "Envoyer l'email de réinitialisation",
+    "savingPassword": "Enregistrement...",
+    "saveNewPassword": "Enregistrer le nouveau mot de passe",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "hey": "Salut, {email} !",
+    "user": "Utilisateur"
   },
   "vendors": {
     "title": "Vendeurs",
@@ -21,7 +52,17 @@
     "location": "Emplacement",
     "contactEmail": "Email de Contact",
     "backToVendors": "Retour aux Vendeurs",
-    "vendor": "Vendeur"
+    "vendor": "Vendeur",
+    "searchBy": "Rechercher par",
+    "searchByName": "Rechercher par nom",
+    "searchPlaceholder": "Rechercher des vendeurs par nom...",
+    "noResultsFound": "Aucun vendeur trouvé correspondant à"
+  },
+  "products": {
+    "selectProducts": "Sélectionner les Produits",
+    "categories": "Catégories",
+    "subcategories": "Sous-catégories",
+    "products": "Produits"
   },
   "vendorForm": {
     "addNewVendor": "Ajouter un Nouveau Vendeur",
@@ -31,12 +72,25 @@
     "addVendor": "Ajouter un Vendeur"
   },
   "hero": {
-    "title": "Connectez-vous avec les vendeurs locaux de fruits et légumes de votre région",
+    "titlePart1": "Connectez-vous avec les vendeurs locaux de ",
+    "titleHighlight": "fruits et légumes",
+    "titlePart2": " de votre région",
     "subtitle": "Marché Fruits & Légumes - Connectez-vous avec les Vendeurs Locaux"
   },
   "common": {
     "nextSteps": "Prochaines étapes",
-    "poweredBy": "Propulsé par"
+    "poweredBy": "Propulsé par",
+    "anErrorOccurred": "Une erreur s'est produite"
+  },
+  "tutorial": {
+    "signUpFirstUser": "Inscrivez votre premier utilisateur",
+    "signUpFirstUserDescription": "Rendez-vous sur la page <signUpLink>S'inscrire</signUpLink> et inscrivez votre premier utilisateur. Ce n'est pas grave si c'est juste vous pour l'instant. Votre idée géniale aura plein d'utilisateurs plus tard !",
+    "setupRedirectUrls": "Configurer les URLs de redirection",
+    "hostedOnVercel": "Il semble que cette App soit hébergée sur Vercel.",
+    "particularDeployment": "Ce déploiement particulier est",
+    "getTheMostOut": "Pour tirer le meilleur parti de votre expérience de développement local, veuillez",
+    "updateSupabaseProject": "mettre à jour votre projet Supabase",
+    "withRedirectUrls": "avec des URLs de redirection basées sur vos URLs de déploiement Vercel."
   },
   "language": {
     "english": "Anglais",

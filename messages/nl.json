@@ -1,12 +1,43 @@
 {
   "navigation": {
     "home": "Fruit & Groente Markt",
-    "vendors": "Verkopers"
+    "vendors": "Verkopers",
+    "members": "Leden"
   },
   "auth": {
     "login": "Inloggen",
     "logout": "Uitloggen",
-    "signUp": "Registreren"
+    "signUp": "Registreren",
+    "signUpTitle": "Registreren",
+    "signUpDescription": "Maak een nieuw account aan",
+    "loginTitle": "Inloggen",
+    "loginDescription": "Log in op uw account",
+    "forgotPasswordTitle": "Wachtwoord opnieuw instellen",
+    "forgotPasswordDescription": "Voer uw email in om uw wachtwoord opnieuw in te stellen",
+    "updatePasswordTitle": "Uw wachtwoord opnieuw instellen",
+    "updatePasswordDescription": "Voer hieronder uw nieuwe wachtwoord in.",
+    "checkEmailTitle": "Controleer uw email",
+    "checkEmailDescription": "Wachtwoord reset instructies verzonden",
+    "checkEmailMessage": "Als u zich heeft geregistreerd met uw email en wachtwoord, ontvangt u een wachtwoord reset email.",
+    "resetPasswordDescription": "Voer uw email in en we sturen u een link om uw wachtwoord opnieuw in te stellen",
+    "email": "Email",
+    "emailPlaceholder": "mijn@voorbeeld.nl",
+    "password": "Wachtwoord",
+    "newPassword": "Nieuw wachtwoord",
+    "newPasswordPlaceholder": "Nieuw wachtwoord",
+    "repeatPassword": "Herhaal wachtwoord",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "passwordsDoNotMatch": "Wachtwoorden komen niet overeen",
+    "creatingAccount": "Account aanmaken...",
+    "loggingIn": "Inloggen...",
+    "sendingReset": "Reset email verzenden...",
+    "sendResetEmail": "Reset email verzenden",
+    "savingPassword": "Opslaan...",
+    "saveNewPassword": "Nieuw wachtwoord opslaan",
+    "alreadyHaveAccount": "Heeft u al een account?",
+    "dontHaveAccount": "Heeft u geen account?",
+    "hey": "Hallo, {email}!",
+    "user": "Gebruiker"
   },
   "vendors": {
     "title": "Verkopers",
@@ -21,7 +52,17 @@
     "location": "Locatie",
     "contactEmail": "Contact E-mail",
     "backToVendors": "Terug naar Verkopers",
-    "vendor": "Verkoper"
+    "vendor": "Verkoper",
+    "searchBy": "Zoeken op",
+    "searchByName": "Zoeken op naam",
+    "searchPlaceholder": "Zoek verkopers op naam...",
+    "noResultsFound": "Geen verkopers gevonden die overeenkomen met"
+  },
+  "products": {
+    "selectProducts": "Selecteer Producten",
+    "categories": "Categorieën",
+    "subcategories": "Subcategorieën",
+    "products": "Producten"
   },
   "vendorForm": {
     "addNewVendor": "Nieuwe Verkoper Toevoegen",
@@ -31,12 +72,25 @@
     "addVendor": "Verkoper Toevoegen"
   },
   "hero": {
-    "title": "Verbind met lokale fruit- en groenteverkopers in uw omgeving",
+    "titlePart1": "Verbind met lokale ",
+    "titleHighlight": "fruit- en groenteverkopers",
+    "titlePart2": " in uw omgeving",
     "subtitle": "Fruit & Groente Markt - Verbind met Lokale Verkopers"
   },
   "common": {
     "nextSteps": "Volgende stappen",
-    "poweredBy": "Mogelijk gemaakt door"
+    "poweredBy": "Mogelijk gemaakt door",
+    "anErrorOccurred": "Er is een fout opgetreden"
+  },
+  "tutorial": {
+    "signUpFirstUser": "Registreer uw eerste gebruiker",
+    "signUpFirstUserDescription": "Ga naar de <signUpLink>Registreren</signUpLink> pagina en registreer uw eerste gebruiker. Het is oké als dit alleen u bent voor nu. Uw geweldige idee zal later veel gebruikers hebben!",
+    "setupRedirectUrls": "Redirect URLs instellen",
+    "hostedOnVercel": "Het lijkt erop dat deze App gehost wordt op Vercel.",
+    "particularDeployment": "Deze specifieke deployment is",
+    "getTheMostOut": "Om het meeste uit uw lokale ontwikkelervaring te halen, kunt u",
+    "updateSupabaseProject": "uw Supabase project bijwerken",
+    "withRedirectUrls": "met redirect URLs gebaseerd op uw Vercel deployment URLs."
   },
   "language": {
     "english": "Engels",

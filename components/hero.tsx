@@ -23,8 +23,9 @@ export function Hero() {
       </div>
       <h1 className='sr-only'>{t('subtitle')}</h1>
       <p className='text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center'>
-        Connect with local <span className='font-bold text-green-600'>fruit & vegetable</span>{' '}
-        vendors in your area
+        {t('titlePart1')}
+        <span className='font-bold text-green-600'>{t('titleHighlight')}</span>
+        {t('titlePart2')}
       </p>
       <div className='w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8' />
     </div>

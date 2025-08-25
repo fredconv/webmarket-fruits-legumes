@@ -45,20 +45,24 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
-  if (
-    request.nextUrl.pathname !== '/' &&
-    !user &&
-    !request.nextUrl.pathname.startsWith('/login') &&
-    !request.nextUrl.pathname.startsWith('/auth') &&
-    !request.nextUrl.pathname.startsWith('/vendors')
-  ) {
-    // no user, potentially respond by redirecting the user to the login page
-    const url = request.nextUrl.clone();
-    url.pathname = '/auth/login';
-    return NextResponse.redirect(url);
-  }
+  const pathname = request.nextUrl.pathname;
 
-  // IMPORTANT: You *must* return the supabaseResponse object as it is.
+  // Extract the path without locale prefix for auth checking
+  const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '');
+
+  // Only protect specific "members only" routes
+  const protectedRoutes = ['/protected', '/dashboard', '/profile', '/members'];
+  const isProtectedRoute = protectedRoutes.some((route) => pathWithoutLocale.startsWith(route));
+
+  if (isProtectedRoute && !user) {
+    // Redirect to login only for protected routes
+    const url = request.nextUrl.clone();
+    // Preserve the locale in the redirect
+    const localeMatch = pathname.match(/^\/([a-z]{2})/);
+    const locale = localeMatch ? localeMatch[1] : 'en';
+    url.pathname = `/${locale}/auth/login`;
+    return NextResponse.redirect(url);
+  } // IMPORTANT: You *must* return the supabaseResponse object as it is.
   // If you're creating a new response object with NextResponse.next() make sure to:
   // 1. Pass the request in it, like so:
   //    const myNewResponse = NextResponse.next({ request })

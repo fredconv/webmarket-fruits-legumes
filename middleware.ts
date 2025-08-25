@@ -8,11 +8,16 @@ const intlMiddleware = createMiddleware({
   locales,
   defaultLocale: 'en',
   localePrefix: 'always',
+  localeDetection: false, // Disable automatic locale detection
 });
 
 export async function middleware(request: NextRequest) {
+  console.log('Middleware called for:', request.nextUrl.pathname);
+
   // Handle internationalization first
   const intlResponse = intlMiddleware(request);
+
+  console.log('Intl response status:', intlResponse.status);
 
   // If intl middleware returns a redirect, use it
   if (intlResponse.status !== 200) {
@@ -20,7 +25,10 @@ export async function middleware(request: NextRequest) {
   }
 
   // Apply Supabase session middleware
-  return await updateSession(request);
+  const sessionResponse = await updateSession(request);
+  console.log('Session response status:', sessionResponse.status);
+
+  return sessionResponse;
 }
 
 export const config = {

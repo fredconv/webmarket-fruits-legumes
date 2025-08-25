@@ -1,12 +1,43 @@
 {
   "navigation": {
     "home": "Fruit & Vegetable Market",
-    "vendors": "Vendors"
+    "vendors": "Vendors",
+    "members": "Members"
   },
   "auth": {
     "login": "Login",
     "logout": "Logout",
-    "signUp": "Sign up"
+    "signUp": "Sign up",
+    "signUpTitle": "Sign up",
+    "signUpDescription": "Create a new account",
+    "loginTitle": "Login",
+    "loginDescription": "Sign in to your account",
+    "forgotPasswordTitle": "Reset Password",
+    "forgotPasswordDescription": "Enter your email to reset your password",
+    "updatePasswordTitle": "Reset Your Password",
+    "updatePasswordDescription": "Please enter your new password below.",
+    "checkEmailTitle": "Check Your Email",
+    "checkEmailDescription": "Password reset instructions sent",
+    "checkEmailMessage": "If you registered using your email and password, you will receive a password reset email.",
+    "resetPasswordDescription": "Type in your email and we'll send you a link to reset your password",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "password": "Password",
+    "newPassword": "New password",
+    "newPasswordPlaceholder": "New password",
+    "repeatPassword": "Repeat Password",
+    "forgotPassword": "Forgot your password?",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "creatingAccount": "Creating an account...",
+    "loggingIn": "Logging in...",
+    "sendingReset": "Sending reset email...",
+    "sendResetEmail": "Send reset email",
+    "savingPassword": "Saving...",
+    "saveNewPassword": "Save new password",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "hey": "Hey, {email}!",
+    "user": "User"
   },
   "vendors": {
     "title": "Vendors",
@@ -21,7 +52,17 @@
     "location": "Location",
     "contactEmail": "Contact Email",
     "backToVendors": "Back to Vendors",
-    "vendor": "Vendor"
+    "vendor": "Vendor",
+    "searchBy": "Search by",
+    "searchByName": "Search by name",
+    "searchPlaceholder": "Search vendors by name...",
+    "noResultsFound": "No vendors found matching"
+  },
+  "products": {
+    "selectProducts": "Select Products",
+    "categories": "Categories",
+    "subcategories": "Subcategories",
+    "products": "Products"
   },
   "vendorForm": {
     "addNewVendor": "Add New Vendor",
@@ -31,12 +72,25 @@
     "addVendor": "Add Vendor"
   },
   "hero": {
-    "title": "Connect with local fruit & vegetable vendors in your area",
+    "titlePart1": "Connect with local ",
+    "titleHighlight": "fruit & vegetable",
+    "titlePart2": " vendors in your area",
     "subtitle": "Fruit & Vegetable Market - Connect with Local Vendors"
   },
   "common": {
     "nextSteps": "Next steps",
-    "poweredBy": "Powered by"
+    "poweredBy": "Powered by",
+    "anErrorOccurred": "An error occurred"
+  },
+  "tutorial": {
+    "signUpFirstUser": "Sign up your first user",
+    "signUpFirstUserDescription": "Head over to the <signUpLink>Sign up</signUpLink> page and sign up your first user. It's okay if this is just you for now. Your awesome idea will have plenty of users later!",
+    "setupRedirectUrls": "Set up redirect urls",
+    "hostedOnVercel": "It looks like this App is hosted on Vercel.",
+    "particularDeployment": "This particular deployment is",
+    "getTheMostOut": "To get the most out of your local development experience, please",
+    "updateSupabaseProject": "update your Supabase project",
+    "withRedirectUrls": "with redirect URLs based on your Vercel deployment URLs."
   },
   "language": {
     "english": "English",
