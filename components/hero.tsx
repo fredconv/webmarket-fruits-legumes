@@ -1,7 +1,12 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { NextLogo } from './next-logo';
 import { SupabaseLogo } from './supabase-logo';
 
 export function Hero() {
+  const t = useTranslations('hero');
+
   return (
     <div className='flex flex-col gap-16 items-center'>
       <div className='flex gap-8 justify-center items-center'>
@@ -16,7 +21,7 @@ export function Hero() {
           <NextLogo />
         </a>
       </div>
-      <h1 className='sr-only'>Fruit & Vegetable Market - Connect with Local Vendors</h1>
+      <h1 className='sr-only'>{t('subtitle')}</h1>
       <p className='text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center'>
         Connect with local <span className='font-bold text-green-600'>fruit & vegetable</span>{' '}
         vendors in your area
